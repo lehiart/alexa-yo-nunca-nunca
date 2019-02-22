@@ -1,0 +1,55 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "alexa-yo-nunca",
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "es-MX": {}
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "es-MX": {
+          "name": "Yo nunca nunca",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/9170/06a005131b9b425aad0159e0c02f154d/APP_ICON?versionId=3H3YIu1iJN3FT4_aQlw3FT0rnvWlIkml&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1550686324&Signature=Ds%2FwGV1Y6J3qDaKgCTbKpv883DQ%3D",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/6cc5/62e4dd4ecfab44f1b6308a4b09fa2fc8/APP_ICON_LARGE?versionId=RykXSSOMsO18Hd8y1EKsUDN.sEkVJxjI&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1550686324&Signature=QmbmZre%2FTqF%2FqvyHzhjYy94LYv8%3D",
+          "summary": "Divertido juego de preguntas, ¡descubre todos los secretos de tus amigos!",
+          "description": "¡Las mejores preguntas! Descubre todos los secretos de tus amigos.\n\nInicia el juego diciendo << empezar juego>> y selecciona la categoría deseada\n\nSelecciona entre dos categorías: general o familiar\n\nAvanza diciendo: <<siguiente>> \nReinicia el juego diciendo: <<nuevo juego>>\nRepite la pregunta que recién escuchaste diciendo: <<repítelo>>\n\n¡Escucha cientos de preguntas disponibles!.",
+          "examplePhrases": [
+            "Alexa, abre yo nunca nunca",
+            "empieza un nuevo juego",
+            "categoría familiar"
+          ],
+          "keywords": [
+            "nunca",
+            "nunca",
+            "español",
+            "juego",
+            "mexico",
+            "yo",
+            "nunca",
+            "nunca",
+            "juegos",
+            "preguntas"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.\n\n<<Alexa, abre yo nunca nunca>>\nstart the game << empezar>>\nchose a category << categoria familiar>>\nto continue the game say <<siguiente>>\nto repeat the phrase say <<repitelo>>",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    }
+  }
+}

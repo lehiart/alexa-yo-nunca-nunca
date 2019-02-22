@@ -1,0 +1,206 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "yo nunca nunca",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": [
+                        "adelante",
+                        "siguiente",
+                        "la siguiente",
+                        "el siguiente",
+                        "siguiente pregunta",
+                        "siguiente frase",
+                        "avanza",
+                        "la proxima",
+                        "proxima",
+                        "escuchar la siguiente",
+                        "oir la siguiente",
+                        "poner la siguiente"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "dilo de nuevo",
+                        "dimelo de nuevo",
+                        "repitemelo",
+                        "repitemela",
+                        "repitelo",
+                        "repite",
+                        "repetir",
+                        "repetirla",
+                        "repetirmela"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": [
+                        "nuevo juego",
+                        "pon nuevo juego",
+                        "pon juego nuevo",
+                        "pon de nuevo",
+                        "inicia nuevo juego",
+                        "inicia juego nuevo",
+                        "inicia de nuevo",
+                        "comienza nuevo juego",
+                        "comienza juego nuevo",
+                        "comienza de nuevo",
+                        "empezar un nuevo juego",
+                        "empezar nuevo juego",
+                        "empezar juego nuevo",
+                        "empezar de nuevo",
+                        "empieza un nuevo juego",
+                        "empieza nuevo juego",
+                        "empieza juego nuevo",
+                        "empieza de nuevo",
+                        "iniciar nuevo juego",
+                        "iniciar juego nuevo",
+                        "iniciar de nuevo",
+                        "comenzar nuevo juego",
+                        "comenzar juego nuevo",
+                        "comenzar de nuevo",
+                        "poner un nuevo juego",
+                        "poner nuevo juego",
+                        "poner juego nuevo",
+                        "poner de nuevo",
+                        "abrir nuevo juego",
+                        "abrir juego nuevo",
+                        "abrir de nuevo"
+                    ]
+                },
+                {
+                    "name": "StartGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "comenzar",
+                        "empieza",
+                        "inicia",
+                        "iniciar",
+                        "empezar",
+                        "comienza",
+                        "empieza yo nunca",
+                        "empieza juego",
+                        "empieza yo nunca nunca",
+                        "empieza un juego",
+                        "empieza el juego",
+                        "comienza yo nunca",
+                        "empieza un juego",
+                        "comienza juego",
+                        "comienza yo nunca nunca",
+                        "comienza un juego",
+                        "comienza el juego",
+                        "inicia yo nunca",
+                        "inicia un nuevo juego",
+                        "inicia juego",
+                        "inicia yo nunca nunca",
+                        "inicia un juego",
+                        "inicia el juego",
+                        "empezar yo nunca",
+                        "empezar juego",
+                        "empezar yo nunca nunca",
+                        "empezar un juego",
+                        "empezar el juego",
+                        "comenzar yo nunca",
+                        "comenzar juego",
+                        "comenzar yo nunca nunca",
+                        "comenzar un juego",
+                        "comenzar el juego",
+                        "iniciar yo nunca",
+                        "iniciar juego",
+                        "iniciar yo nunca nunca",
+                        "iniciar un juego",
+                        "iniciar el juego"
+                    ]
+                },
+                {
+                    "name": "AnswerCategoryIntent",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "DefinedCategory"
+                        }
+                    ],
+                    "samples": [
+                        "{category}",
+                        "la categoria {category}",
+                        "la {category}",
+                        "categoria {category}",
+                        "quiero la {category}",
+                        "quiero {category}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DefinedCategory",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "general"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "familiar"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AnswerCategoryIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "DefinedCategory",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.351178943612.718775903857.1280840496417"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Slot.Validation.351178943612.718775903857.1280840496417",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Lo siento, la categoria no esta disponible."
+                    }
+                ]
+            }
+        ]
+    }
+}
