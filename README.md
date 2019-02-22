@@ -4,6 +4,6 @@ This Skill (app) is currently in the amazon store: https://www.amazon.com.mx/leh
 
 Its a game of questions with two categories.
 
-In order to work you need to provide add the constants(arrays) with the questions in a constants.js file
+In order to work you need to provide the constants(arrays) with the questions in a constants.js file
 
 The model is created for Spanish (MX) language.

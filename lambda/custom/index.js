@@ -1,4 +1,4 @@
-const alexa = require('ask-sdk');
+const alexa = require('ask-sdk-core');
 const questionsList = require('./constants');
 
 const LaunchRequestHandler = {
